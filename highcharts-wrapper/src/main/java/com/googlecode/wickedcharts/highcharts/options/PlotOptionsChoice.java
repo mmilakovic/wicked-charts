@@ -38,6 +38,17 @@ public class PlotOptionsChoice implements Serializable {
 
 	private PlotOptions line;
 
+    public PlotOptions getFunnel() {
+        return this.funnel;
+    }
+
+    public PlotOptionsChoice setFunnel(final PlotOptions funnel) {
+        this.funnel = funnel;
+        return this;
+    }
+
+    private PlotOptions funnel;
+
 	private PlotOptions pie;
 
 	private PlotOptions scatter;
@@ -190,6 +201,8 @@ public class PlotOptionsChoice implements Serializable {
 				return this.columnrange;
 			case GAUGE:
 				return this.gauge;
+            case FUNNEL:
+                return  this.funnel;
 			default:
 				throw new IllegalArgumentException("Invalid SeriesType: " + type);
 		}
@@ -229,6 +242,9 @@ public class PlotOptionsChoice implements Serializable {
 			case LINE:
 				this.line = plotOptions;
 				break;
+            case FUNNEL:
+                this.funnel = plotOptions;
+                break;
 			case PIE:
 				this.pie = plotOptions;
 				break;

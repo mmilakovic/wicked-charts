@@ -4,13 +4,13 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.googlecode.wicked-charts</groupId>
-	<artifactId>wicked-charts-parent</artifactId>
-	<version>1.5.1-SNAPSHOT</version>
+	<artifactId>wicked-charts-mmilakovic</artifactId>
+	<version>1.5.1-mmilakovic</version>
 	<name>Wicked Charts parent</name>
 	<packaging>pom</packaging>
 	<description>Parent POM for wicked-charts</description>
 
-	<url>https://github.com/thombergs/wicked-charts</url>
+	<url>https://github.com/mmilakovic/wicked-charts</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
